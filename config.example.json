@@ -1,0 +1,44 @@
+{
+  "background": {
+    "lower_white": [0, 0, 200],
+    "upper_white": [180, 55, 255],
+    "close_kernel": 5,
+    "open_kernel": 5
+  },
+  "vein": {
+    "blur_size": 3,
+    "sobel_ksize": 3,
+    "threshold_value": 30,
+    "morph_size": 2,
+    "adaptive_block_size": null,
+    "adaptive_c": 2,
+    "overlay_color": [0, 255, 0],
+    "auto_threshold": true,
+    "target_white_ratio": 0.03,
+    "ratio_tolerance": 0.01,
+    "auto_threshold_min": 5,
+    "auto_threshold_max": 120,
+    "closing_size": null
+  },
+  "vein_variants": [
+    {
+      "name": "fine_details",
+      "blur_size": 3,
+      "sobel_ksize": 3,
+      "threshold_value": 25,
+      "morph_size": 1,
+      "overlay_color": [255, 0, 0],
+      "target_white_ratio": 0.05
+    },
+    {
+      "name": "strong_noise_reduction",
+      "blur_size": 7,
+      "sobel_ksize": 5,
+      "threshold_value": 45,
+      "morph_size": 3,
+      "overlay_color": [0, 128, 255],
+      "closing_size": 3,
+      "target_white_ratio": 0.015
+    }
+  ]
+}
